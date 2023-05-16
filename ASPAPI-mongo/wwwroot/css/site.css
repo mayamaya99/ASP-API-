@@ -1,0 +1,181 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    color: black !important;
+    box-sizing: border-box;
+    border: 0.2px solid grey;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    padding:2rem;
+}
+
+
+th, td {
+    border: 1px solid grey;
+    padding: 10px;
+    min-width:100px;
+ 
+}
+
+thead th {
+    width: 25%;
+   
+}
+
+thead {
+    background-color: #333;
+    color: white;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+table {
+    padding: 20px;
+    border-collapse: collapse;
+}
+
+tbody th {
+    background-color: #36c;
+    color: #fff;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: lightskyblue;
+}
+
+input[type=text] {
+    width: 200px;
+    padding: 7px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-bottom: 2px;
+}
+
+input[type=number] {
+    width: 200px;
+    padding: 7px 20px !important;
+    margin: 8px 0 !important;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-bottom: 6px;
+}
+
+
+
+.myGrid {
+    display: grid;
+    background-color: whitesmoke !important;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 200px 500px 200px;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.box1 {
+    grid-column-start: 1;
+    grid-auto-columns: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.box2 {
+    grid-column-start: 3;
+    grid-auto-columns: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.box3 {
+    grid-column-start: 2;
+    grid-auto-columns: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.box4 {
+    grid-column-start: 3;
+    grid-auto-columns: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+button {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, .05);
+}
+
+
+select {
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+    padding: 5px 14px;
+    background-color: rgba(62, 161, 209, 0.7);
+    cursor: pointer;
+}
+
+#newOriginButton {
+    background-color: #55acee;
+    color: white;
+}
+
+    #newOriginButton:hover {
+        background-color: #2795e9;
+        color: #fff;
+    }
+
+#genderButton {
+    background-color: #587ea3;
+    color: white;
+}
+
+    #genderButton:hover {
+        background-color: #466482;
+        color: #fff;
+    }
+
+#addButton {
+    background-color: #dd4b39;
+    color: white;
+}
+
+    #addButton:hover {
+        background-color: #c23321;
+        color: #fff;
+    }
+
+#showButton {
+    background-color: #ee8208;
+    color: white;
+}
+
+    #showButton:hover {
+        background-color: #ee7808;
+        color: #fff;
+    }
+
+#addButton{
+    border-radius:18px;
+}
+#showButton{
+    border-radius:18px;
+}

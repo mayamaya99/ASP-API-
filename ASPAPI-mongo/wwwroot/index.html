@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+    <link href='//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <h2 style="text-align:center">NAMES</h2>
+
+    
+
+    
+    <div class="myGrid">
+        <div class="box1">
+            <label for="newOrigin">New Country Origin</label>
+            <input type="text" id="newOrigin" name="newOrigin" width="40" /><br />
+            <button id="newOriginButton" type="button" onclick="newOriginButton()"> Add New Origin</button> <br />
+            <br /><br /><br />
+
+
+        </div>
+        <div class="box2">
+
+            <label for="newGender">New Gender</label>
+            <input type="text" id="newGender" name="newGender" width="40" /><br />
+            <button id="genderButton" type="button" onclick="newGenderButton()"> Add New Gender</button> <br />
+            <br /><br /><br />
+        </div>
+        <div class="box3">
+            <br /><br />
+
+
+
+            <table id="nametable"></table>
+            <br /><br />
+            <br />
+            Origin:&nbsp;&nbsp;<select type="text" id="originList" name="originList" width="40"></select>&nbsp;
+            Gender:&nbsp;&nbsp;<select type="text" id="genderList" name="genderList" width="40"></select><br />
+            <br /><br>
+            Name:&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input type="text" id="name" name="name" width="20" /><br />
+            YearMost: <input type="number" id="mostYear" name="mostYear" width="20" /><br />
+
+            YearLeast: <input type="number" id="leastYear" name="leastYear" width="20" /><br />
+            <br /><br />
+
+
+
+            <button id="addButton" type="button" onclick="addButton()"> Add New Name</button>
+            <button id="showButton" type="button" onclick="showButton()"> Refresh Name List</button> <br />
+
+        </div>
+        <div class="box4">
+            <p>Backup</p>
+            <button id="backupButton" type="button" onclick="backupButton()"> Backup Data</button> 
+            <button id="displayBackupButton" type="button" onclick="displayBackupButton()"> Show backup Data</button> <br />
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>
